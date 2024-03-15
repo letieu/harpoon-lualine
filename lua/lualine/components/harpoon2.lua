@@ -4,7 +4,7 @@ local M = lualine_require.require('lualine.component'):extend()
 local hl = require("harpoon-lualine")
 
 local default_options = {
-  icon = 'H: ',
+  icon = 'H:',
   indicators = { "a", "s", "q", "w" },
   active_indicators = { "A", "S", "Q", "W" },
 }
