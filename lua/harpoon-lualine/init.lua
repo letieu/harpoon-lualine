@@ -8,7 +8,7 @@ M.status = function(options)
   local root_dir = list.config:get_root_dir()
   local current_file_path = vim.api.nvim_buf_get_name(0)
 
-  local length = math.min(list:length(), 4)
+  local length = math.min(list:length(), #options.indicators)
 
   local status = ""
 
