@@ -23,7 +23,7 @@ M.status = function(options)
     end
   end
 
-  return table.concat(status, "")
+  return table.concat(status, options.separator)
 end
 
 M.setup = function(_)

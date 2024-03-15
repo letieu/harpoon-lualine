@@ -7,6 +7,7 @@ local default_options = {
   icon = '󰀱 ',
   indicators = { "1", "2", "3", "4" },
   active_indicators = { "[1]", "[2]", "[3]", "[4]" },
+  separator = " ",
 }
 
 function M:init(options)
