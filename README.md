@@ -47,6 +47,7 @@ lualine_c = { 'another_item', {
   icon = '♥',
   indicators = { "a", "s", "q", "w" },
   active_indicators = { "A", "S", "Q", "W" },
+  separator = " ",
 },
 
 ```
