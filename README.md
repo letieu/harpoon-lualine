@@ -22,6 +22,15 @@
     },
   }
 ```
+*With **packer.nvim**
+```lua
+  use {
+    'letieu/harpoon-lualine',
+    opt = false,
+    requires = {{'nvim-lualine/lualine.nvim'}, {'ThePrimeagen/harpoon'}}
+  }
+
+```
 
 **Usage:**
 
