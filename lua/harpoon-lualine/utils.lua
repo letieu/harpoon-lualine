@@ -12,4 +12,12 @@ M.lazy_require = function(require_path)
   })
 end
 
+M.get_full_path = function(root_dir, value)
+  if vim.loop.os_uname().sysname == "Windows_NT" then
+    return root_dir .. "\\" .. value
+  end
+
+  return root_dir .. "/" .. value
+end
+
 return M

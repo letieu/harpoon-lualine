@@ -10,18 +10,11 @@ M.status = function(options)
 
   local length = math.min(list:length(), #options.indicators)
 
-  local status = ""
+  local status = {}
 
   for i = 1, length do
     local value = list:get(i).value
-
-    local full_path = root_dir .. "/" .. value
-
-    if vim.loop.os_uname().sysname == "Windows_NT" then
-      full_path = root_dir .. "\\" .. value
-    else
-      full_path = root_dir .. "/" .. value
-    end
+    local full_path = utils.get_full_path(root_dir, value)
 
     if full_path == current_file_path then
       status = status .. " " .. options.active_indicators[i]
