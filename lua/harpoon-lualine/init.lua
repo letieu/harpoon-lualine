@@ -22,7 +22,7 @@ M.status = function(options)
     end
   end
 
-  return [[ 󰀱 ]] .. status
+  return status
 end
 
 return M
