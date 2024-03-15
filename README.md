@@ -26,7 +26,7 @@
   use {
     'letieu/harpoon-lualine',
     opt = false,
-    requires = {{'nvim-lualine/lualine.nvim'}, {'ThePrimeagen/harpoon'}}
+    requires = {{'ThePrimeagen/harpoon'}}
   }
 
 ```
