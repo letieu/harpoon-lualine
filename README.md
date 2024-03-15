@@ -52,6 +52,29 @@ lualine_c = { 'another_item', {
 
 ```
 
+**How I use harpoon 💡**
+
+Bind harpoon mark to `a`, `s`, `q`, `w` and use `Ctrl` + `a`, `s`, `q`, `w` to jump to the mark.
+
+```lua
+vim.keymap.set("n", "<C-a>", function() harpoon:list():select(1) end)
+vim.keymap.set("n", "<C-s>", function() harpoon:list():select(2) end)
+vim.keymap.set("n", "<C-q>", function() harpoon:list():select(3) end)
+vim.keymap.set("n", "<C-w>", function() harpoon:list():select(4) end)
+```
+
+View current marks with lualine
+
+```lua
+lualine_c = { 
+  '%=', -- make the indicator center
+  {
+    "harpoon2",
+    indicators = { "a", "s", "q", "w" },
+    active_indicators = { "A", "S", "Q", "W" },
+  }
+}
+```
 
 **Enjoy!**
 
