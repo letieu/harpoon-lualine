@@ -22,7 +22,7 @@
     },
   }
 ```
-*With **packer.nvim**
+* With **packer.nvim**
 ```lua
   use {
     'letieu/harpoon-lualine',
