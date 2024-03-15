@@ -5,8 +5,8 @@ local hl = require("harpoon-lualine")
 
 local default_options = {
   icon = '󰀱 ',
-  indicators = { "a", "s", "q", "w" },
-  active_indicators = { "A", "S", "Q", "W" },
+  indicators = { "1", "2", "3", "4" },
+  active_indicators = { "[1]", "[2]", "[3]", "[4]" },
 }
 
 function M:init(options)
