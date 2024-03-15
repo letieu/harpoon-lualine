@@ -25,4 +25,8 @@ M.status = function(options)
   return status
 end
 
+M.setup = function(_)
+  -- do nothing, just for compatibility
+end
+
 return M
