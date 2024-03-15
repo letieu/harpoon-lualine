@@ -19,6 +19,7 @@ M.status = function(options)
     if full_path == current_file_path then
       table.insert(status, "%#lualine_b_diagnostics_warn_normal#")
       table.insert(status, options.active_indicators[i])
+      table.insert(status, "%#lualine_b_normal#")
     else
       table.insert(status, options.indicators[i])
     end
