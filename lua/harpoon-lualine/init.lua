@@ -17,13 +17,13 @@ M.status = function(options)
     local full_path = utils.get_full_path(root_dir, value)
 
     if full_path == current_file_path then
-      status = status .. " " .. options.active_indicators[i]
+      table.insert(status, options.active_indicators[i])
     else
-      status = status .. " " .. options.indicators[i]
+      table.insert(status, options.indicators[i])
     end
   end
 
-  return status
+  return table.concat(status, "")
 end
 
 M.setup = function(_)
