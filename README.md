@@ -56,3 +56,4 @@ lualine_c = { 'another_item', {
 **Enjoy!**
 
 **Note:** Customize indicator characters by editing the configuration.
+**Note:** To center the indicator, add a `%=`. For example: `lualine_c = { "%=", "harpoon2"},`
