@@ -1,5 +1,5 @@
-local utils = require("harpoon-lualine.utils")
-local harpoon = utils.lazy_require("harpoon")
+local utils = require "harpoon-lualine.utils"
+local harpoon = utils.lazy_require "harpoon"
 
 local M = {}
 

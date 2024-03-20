@@ -1,7 +1,7 @@
-local lualine_require = require("lualine_require")
+local lualine_require = require "lualine_require"
 local M = lualine_require.require("lualine.component"):extend()
 
-local hl = require("harpoon-lualine")
+local hl = require "harpoon-lualine"
 
 local default_options = {
     icon = "󰀱 ",
