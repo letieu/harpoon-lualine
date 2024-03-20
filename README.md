@@ -1,6 +1,6 @@
 ## Harpoon Lualine Plugin
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 ![Screenshot 2024-03-15 at 12 47 08 PM](https://github.com/letieu/harpoon-lualine/assets/53562817/5d6f055f-de67-46dd-8b73-ecbf7a5dba5b)
 
@@ -97,6 +97,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://mairimashita.org/"><img src="https://avatars.githubusercontent.com/u/68560840?v=4?s=100" width="100px;" alt="Taken"/><br /><sub><b>Taken</b></sub></a><br /><a href="https://github.com/letieu/harpoon-lualine/commits?author=TakenMC" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://letieu.github.io"><img src="https://avatars.githubusercontent.com/u/53562817?v=4?s=100" width="100px;" alt="Le Tieu"/><br /><sub><b>Le Tieu</b></sub></a><br /><a href="#maintenance-letieu" title="Maintenance">🚧</a></td>
     </tr>
   </tbody>
 </table>
