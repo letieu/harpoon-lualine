@@ -1,7 +1,5 @@
 ## Harpoon Lualine Plugin
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 ![Screenshot 2024-03-15 at 12 47 08 PM](https://github.com/letieu/harpoon-lualine/assets/53562817/5d6f055f-de67-46dd-8b73-ecbf7a5dba5b)
 
 **Add a harpoon indicator to your Neovim Lualine!**
@@ -85,6 +83,7 @@ lualine_c = {
 **Note:** Customize indicator characters by editing the configuration.
 
 **Note:** To center the indicator, add a `%=`. For example: `lualine_c = { "%=", "harpoon2"},`
+
 
 ## Contributors ✨
 
