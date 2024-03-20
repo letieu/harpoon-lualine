@@ -49,6 +49,7 @@ lualine_c = { 'another_item', {
   indicators = { "a", "s", "q", "w" },
   active_indicators = { "A", "S", "Q", "W" },
   _separator = " ",
+  no_harpoon = "Harpoon not loaded",
 },
 
 ```
