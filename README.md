@@ -96,7 +96,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://mairimashita.org/"><img src="https://avatars.githubusercontent.com/u/68560840?v=4?s=100" width="100px;" alt="Taken"/><br /><sub><b>Taken</b></sub></a><br /><a href="https://github.com/letieu/harpoon-lualine/commits?author=TakenMC" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://mairimashita.org/"><img src="https://avatars.githubusercontent.com/u/68560840?v=4?s=100" width="100px;" alt="Taken"/><br /><sub><b>Taken</b></sub></a><br /><a href="https://github.com/letieu/harpoon-lualine/commits?author=TakenMC" title="Code">💻</a> <a href="#ideas-TakenMC" title="Ideas, Planning, & Feedback">🤔</a></td>
     </tr>
   </tbody>
 </table>
