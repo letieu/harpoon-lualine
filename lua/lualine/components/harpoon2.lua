@@ -8,6 +8,7 @@ local default_options = {
     indicators = { "1", "2", "3", "4" },
     active_indicators = { "[1]", "[2]", "[3]", "[4]" },
     _separator = " ",
+    no_harpoon = "Harpoon not loaded",
 }
 
 function M:init(options)
@@ -18,7 +19,7 @@ end
 function M:update_status()
     local harpoon_loaded = package.loaded["harpoon"] ~= nil
     if not harpoon_loaded then
-        return "Harpoon not loaded"
+        return self.options.no_harpoon
     end
 
     return hl.status(self.options)
