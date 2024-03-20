@@ -4,30 +4,30 @@ local harpoon = utils.lazy_require("harpoon")
 local M = {}
 
 M.status = function(options)
-  local list = harpoon:list()
-  local root_dir = list.config:get_root_dir()
-  local current_file_path = vim.api.nvim_buf_get_name(0)
+    local list = harpoon:list()
+    local root_dir = list.config:get_root_dir()
+    local current_file_path = vim.api.nvim_buf_get_name(0)
 
-  local length = math.min(list:length(), #options.indicators)
+    local length = math.min(list:length(), #options.indicators)
 
-  local status = {}
+    local status = {}
 
-  for i = 1, length do
-    local value = list:get(i).value
-    local full_path = utils.get_full_path(root_dir, value)
+    for i = 1, length do
+        local value = list:get(i).value
+        local full_path = utils.get_full_path(root_dir, value)
 
-    if full_path == current_file_path then
-      table.insert(status, options.active_indicators[i])
-    else
-      table.insert(status, options.indicators[i])
+        if full_path == current_file_path then
+            table.insert(status, options.active_indicators[i])
+        else
+            table.insert(status, options.indicators[i])
+        end
     end
-  end
 
-  return table.concat(status, options.separator)
+    return table.concat(status, options._separator)
 end
 
 M.setup = function(_)
-  -- do nothing, just for compatibility
+    -- do nothing, just for compatibility
 end
 
 return M
