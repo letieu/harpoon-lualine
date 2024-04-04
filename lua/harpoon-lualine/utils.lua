@@ -20,4 +20,8 @@ M.get_full_path = function(root_dir, value)
     return root_dir .. "/" .. value
 end
 
+M.is_relative_path = function(path)
+    return string.sub(path, 1, 1) ~= "/"
+end
+
 return M
