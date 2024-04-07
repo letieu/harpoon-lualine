@@ -13,7 +13,11 @@ M.status = function(options)
     local status = {}
 
     for i = 1, length do
-        local harpoon_path = harpoon_entries:get(i).value
+        local harpoon_entry = harpoon_entries:get(i)
+        if not harpoon_entry then
+            return
+        end
+        local harpoon_path = harpoon_entry.value
 
         local full_path = nil
         if utils.is_relative_path(harpoon_path) then
