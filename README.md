@@ -14,7 +14,12 @@
 ```lua
   {
     "letieu/harpoon-lualine",
-    dependencies = { "ThePrimeagen/harpoon" },
+    dependencies = {
+      {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+      }
+    },
   }
 ```
 * With **packer.nvim**
