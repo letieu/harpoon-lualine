@@ -34,6 +34,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ptdewey",
+      "name": "Patrick Dewey",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57921252?v=4",
+      "profile": "https://www.pdewey.com/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
