@@ -1,17 +1,21 @@
-## Harpoon Lualine Plugin
+# Harpoon Lualine Plugin
 
 ![Screenshot 2024-03-15 at 12 47 08 PM](https://github.com/letieu/harpoon-lualine/assets/53562817/5d6f055f-de67-46dd-8b73-ecbf7a5dba5b)
 
 **Add a harpoon indicator to your Neovim Lualine!**
 
-**Features:**
+## Features
 
 * Shows [Harpoon](https://github.com/ThePrimeagen/harpoon/tree/harpoon2) status in [Lualine](https://github.com/nvim-lualine/lualine.nvim).
 
-> [!IMPORTANT]  
-> Make sure to install `harpoon2`.: [harpoon2](https://github.com/ThePrimeagen/harpoon/tree/harpoon2)
 
-**Installation:**
+
+> [!IMPORTANT]  
+> Make sure to install [harpoon2](https://github.com/ThePrimeagen/harpoon/tree/harpoon2) , not harpoon on `master` branch
+>
+
+
+## Installation
 
 * With **lazy.nvim**
 ```lua
@@ -35,7 +39,7 @@
 
 ```
 
-**Usage:**
+## Usage
 
 Add this to your [Lualine](https://github.com/nvim-lualine/lualine.nvim) setup:
 
@@ -43,7 +47,7 @@ Add this to your [Lualine](https://github.com/nvim-lualine/lualine.nvim) setup:
 lualine_c = { "harpoon2" },
 ```
 
-Custom config
+**Custom config**
 
 ```lua
 lualine_c = { 'another_item', {
@@ -57,7 +61,7 @@ lualine_c = { 'another_item', {
 
 ```
 
-**How I use harpoon 💡**
+## How I use harpoon 💡
 
 Bind harpoon mark to `a`, `s`, `q`, `w` and use `Ctrl` + `a`, `s`, `q`, `w` to jump to the mark.
 
