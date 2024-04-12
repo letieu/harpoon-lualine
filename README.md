@@ -8,7 +8,8 @@
 
 * Shows [Harpoon](https://github.com/ThePrimeagen/harpoon/tree/harpoon2) status in [Lualine](https://github.com/nvim-lualine/lualine.nvim).
 
-> **Important Note:** Make sure to install `harpoon2`.: [harpoon2](https://github.com/ThePrimeagen/harpoon/tree/harpoon2)
+> [!IMPORTANT]  
+> Make sure to install `harpoon2`.: [harpoon2](https://github.com/ThePrimeagen/harpoon/tree/harpoon2)
 
 **Installation:**
 
