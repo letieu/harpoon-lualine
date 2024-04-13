@@ -26,10 +26,17 @@ M.status = function(options)
             full_path = harpoon_path
         end
 
+        local indicator = nil
         if full_path == current_file_path then
-            table.insert(status, options.active_indicators[i])
+            indicator = options.active_indicators[i]
         else
-            table.insert(status, options.indicators[i])
+            indicator = options.indicators[i]
+        end
+
+        if type(indicator) == "function" then
+            table.insert(status, indicator(harpoon_entry))
+        else
+            table.insert(status, indicator)
         end
     end
 
@@ -38,6 +45,7 @@ end
 
 M.setup = function(_)
     -- do nothing, just for compatibility
+    -- when someone call .setup() on this module
 end
 
 return M

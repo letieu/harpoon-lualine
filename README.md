@@ -61,6 +61,28 @@ lualine_c = { 'another_item', {
 
 ```
 
+**Use function as indicator**
+
+```lua
+  -- harpoon_entry = {
+  --   context = { col = 0, row = 1 },
+  --   value = "init.lua"
+  -- }
+  local function get_harpoon_indicator(harpoon_entry)
+    return harpoon_entry.value
+  end
+
+  -- lualine setup
+  ...
+  active_indicators = {
+    get_harpoon_indicator,
+    get_harpoon_indicator,
+    get_harpoon_indicator,
+    get_harpoon_indicator,
+  },
+  ...
+```
+
 ## How I use harpoon 💡
 
 Bind harpoon mark to `a`, `s`, `q`, `w` and use `Ctrl` + `a`, `s`, `q`, `w` to jump to the mark.
