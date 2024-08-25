@@ -35,27 +35,18 @@ M.status = function(component)
             indicator = component.options.indicators[i]
         end
 
+        local label = indicator
         if type(indicator) == "function" then
-            table.insert(status, indicator(harpoon_entry))
-        elseif type(indicator) == "table" then
-            local label = indicator[1]
-            if type(label) == "function" then
-                label = label(harpoon_entry)
-            end
-
-            if indicator.color then
-                local highlight_group
-                if active then
-                    highlight_group = component.hl_active_indicators[i]
-                else
-                    highlight_group = component.hl_indicators[i]
-                end
-
-                label = highlight.component_format_highlight(highlight_group) .. label
-            end
-        else
-            table.insert(status, indicator)
+            label = indicator(harpoon_entry)
         end
+
+        if component.options.color_active and active then
+            label = highlight.component_format_highlight(component.color_active_hl)
+                .. label
+                .. component:get_default_hl()
+        end
+
+        table.insert(status, label)
     end
 
     return table.concat(status, component.options._separator)
