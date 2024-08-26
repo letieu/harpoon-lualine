@@ -50,14 +50,17 @@ lualine_c = { "harpoon2" },
 **Custom config**
 
 ```lua
-lualine_c = { 'another_item', {
-  "harpoon2",
-  icon = '♥',
-  indicators = { "a", "s", "q", "w" },
-  active_indicators = { "A", "S", "Q", "W" },
-  _separator = " ",
-  no_harpoon = "Harpoon not loaded",
-},
+lualine_c = {
+  {
+    "harpoon2",
+    icon = '♥',
+    indicators = { "a", "s", "q", "w" },
+    active_indicators = { "A", "S", "Q", "W" },
+		color_active = { fg = "#00ff00" },
+    _separator = " ",
+    no_harpoon = "Harpoon not loaded",
+  },
+}
 
 ```
 
