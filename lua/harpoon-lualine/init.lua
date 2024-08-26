@@ -1,14 +1,15 @@
 local utils = require "harpoon-lualine.utils"
 local harpoon = utils.lazy_require "harpoon"
+local highlight = require "lualine.highlight"
 
 local M = {}
 
-M.status = function(options)
+M.status = function(component)
     local harpoon_entries = harpoon:list()
     local root_dir = harpoon_entries.config:get_root_dir()
     local current_file_path = vim.api.nvim_buf_get_name(0)
 
-    local length = math.min(harpoon_entries:length(), #options.indicators)
+    local length = math.min(harpoon_entries:length(), #component.options.indicators)
 
     local status = {}
 
@@ -26,21 +27,29 @@ M.status = function(options)
             full_path = harpoon_path
         end
 
+        local active = full_path == current_file_path
         local indicator = nil
-        if full_path == current_file_path then
-            indicator = options.active_indicators[i]
+        if active then
+            indicator = component.options.active_indicators[i]
         else
-            indicator = options.indicators[i]
+            indicator = component.options.indicators[i]
         end
 
+        local label = indicator
         if type(indicator) == "function" then
-            table.insert(status, indicator(harpoon_entry))
-        else
-            table.insert(status, indicator)
+            label = indicator(harpoon_entry)
         end
+
+        if component.options.color_active and active then
+            label = highlight.component_format_highlight(component.color_active_hl)
+                .. label
+                .. component:get_default_hl()
+        end
+
+        table.insert(status, label)
     end
 
-    return table.concat(status, options._separator)
+    return table.concat(status, component.options._separator)
 end
 
 M.setup = function(_)
