@@ -43,6 +43,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "mageowl",
+      "name": "Owen L.",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32573897?v=4",
+      "profile": "http://mageowlstudios.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
