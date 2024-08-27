@@ -56,7 +56,7 @@ lualine_c = {
     icon = '♥',
     indicators = { "a", "s", "q", "w" },
     active_indicators = { "A", "S", "Q", "W" },
-		color_active = { fg = "#00ff00" },
+    color_active = { fg = "#00ff00" },
     _separator = " ",
     no_harpoon = "Harpoon not loaded",
   },
