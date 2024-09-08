@@ -5,20 +5,21 @@ local highlight = require "lualine.highlight"
 local M = {}
 
 M.status = function(component)
-    local harpoon_entries = harpoon:list()
-    local root_dir = harpoon_entries.config:get_root_dir()
+    local root_dir = harpoon:list().config:get_root_dir()
     local current_file_path = vim.api.nvim_buf_get_name(0)
 
-    local length = math.min(harpoon_entries:length(), #component.options.indicators)
+    local harpoon_items = harpoon:list().items
+
+    local length = math.min(#harpoon_items, #component.options.indicators)
 
     local status = {}
 
     for i = 1, length do
-        local harpoon_entry = harpoon_entries:get(i)
-        if not harpoon_entry then
+        local harpoon_item = harpoon_items[i]
+        if not harpoon_item then
             return
         end
-        local harpoon_path = harpoon_entry.value
+        local harpoon_path = harpoon_item.value
 
         local full_path = nil
         if utils.is_relative_path(harpoon_path) then
@@ -37,7 +38,7 @@ M.status = function(component)
 
         local label = indicator
         if type(indicator) == "function" then
-            label = indicator(harpoon_entry)
+            label = indicator(harpoon_item)
         end
 
         if component.options.color_active and active then
