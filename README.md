@@ -133,6 +133,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/simachri"><img src="https://avatars.githubusercontent.com/u/3276460?v=4?s=100" width="100px;" alt="simachri"/><br /><sub><b>simachri</b></sub></a><br /><a href="https://github.com/letieu/harpoon-lualine/commits?author=simachri" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://www.pdewey.com/"><img src="https://avatars.githubusercontent.com/u/57921252?v=4?s=100" width="100px;" alt="Patrick Dewey"/><br /><sub><b>Patrick Dewey</b></sub></a><br /><a href="https://github.com/letieu/harpoon-lualine/commits?author=ptdewey" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://mageowlstudios.com"><img src="https://avatars.githubusercontent.com/u/32573897?v=4?s=100" width="100px;" alt="Owen L."/><br /><sub><b>Owen L.</b></sub></a><br /><a href="https://github.com/letieu/harpoon-lualine/commits?author=mageowl" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/hareki"><img src="https://avatars.githubusercontent.com/u/81374684?v=4?s=100" width="100px;" alt="Nguyen Ngoc Minh Tu"/><br /><sub><b>Nguyen Ngoc Minh Tu</b></sub></a><br /><a href="https://github.com/letieu/harpoon-lualine/commits?author=hareki" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
