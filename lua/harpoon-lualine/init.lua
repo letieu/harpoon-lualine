@@ -10,44 +10,43 @@ M.status = function(component)
 
     local harpoon_items = harpoon:list().items
 
-    local length = math.min(#harpoon_items, #component.options.indicators)
+    local length = math.min(harpoon:list():length(), #component.options.indicators)
 
     local status = {}
 
     for i = 1, length do
         local harpoon_item = harpoon_items[i]
-        if not harpoon_item then
-            return
-        end
-        local harpoon_path = harpoon_item.value
+        if harpoon_item ~= nil then
+            local harpoon_path = harpoon_item.value
 
-        local full_path = nil
-        if utils.is_relative_path(harpoon_path) then
-            full_path = utils.get_full_path(root_dir, harpoon_path)
-        else
-            full_path = harpoon_path
-        end
+            local full_path = nil
+            if utils.is_relative_path(harpoon_path) then
+                full_path = utils.get_full_path(root_dir, harpoon_path)
+            else
+                full_path = harpoon_path
+            end
 
-        local active = full_path == current_file_path
-        local indicator = nil
-        if active then
-            indicator = component.options.active_indicators[i]
-        else
-            indicator = component.options.indicators[i]
-        end
+            local active = full_path == current_file_path
+            local indicator = nil
+            if active then
+                indicator = component.options.active_indicators[i]
+            else
+                indicator = component.options.indicators[i]
+            end
 
-        local label = indicator
-        if type(indicator) == "function" then
-            label = indicator(harpoon_item)
-        end
+            local label = indicator
+            if type(indicator) == "function" then
+                label = indicator(harpoon_item)
+            end
 
-        if component.options.color_active and active then
-            label = highlight.component_format_highlight(component.color_active_hl)
-                .. label
-                .. component:get_default_hl()
-        end
+            if component.options.color_active and active then
+                label = highlight.component_format_highlight(component.color_active_hl)
+                    .. label
+                    .. component:get_default_hl()
+            end
 
-        table.insert(status, label)
+            table.insert(status, label)
+        end
     end
 
     return table.concat(status, component.options._separator)
